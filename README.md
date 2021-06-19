@@ -1,4 +1,4 @@
-Created a simple SASS Code to start on your project this is my first git project.
+Created a simple SASS Code to start on your project
 
 ================================================================
 code contain:
