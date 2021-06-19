@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "arial";
+  src: url("#");
+}
+/*Theme SCSS */
+.banner h2 {
+  font-size: "20px";
+  text-align: "center";
+  line-height: "30px";
+  text-transform: "capitalize";
+  font-weight: "300";
+  font-family: "arial";
+}
+@media screen and (max-width: 480px) {
+  .banner h2 span {
+    font-size: "20px";
+    text-align: "center";
+    line-height: "30px";
+    text-transform: "capitalize";
+    font-weight: "300";
+    font-family: "arial";
+  }
+}
+.banner:hover h2 {
+  font-size: "20px";
+  text-align: "center";
+  line-height: "30px";
+  text-transform: "capitalize";
+  font-weight: "300";
+  font-family: "arial";
+}
+@media screen and (max-width: 1024px) {
+  .banner {
+    font-size: "18px";
+    text-align: "center";
+    line-height: "25px";
+    text-transform: "capitalize";
+    font-weight: "300";
+    font-family: "arial";
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    font-size: "18px";
+    text-align: "center";
+    line-height: "25px";
+    text-transform: "capitalize";
+    font-weight: "300";
+    font-family: "arial";
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner {
+    font-size: "18px";
+    text-align: "center";
+    line-height: "25px";
+    text-transform: "capitalize";
+    font-weight: "300";
+    font-family: "arial";
+  }
+}
+@media screen and (max-width: 300px) {
+  .banner {
+    font-size: "18px";
+    text-align: "center";
+    line-height: "25px";
+    text-transform: "capitalize";
+    font-weight: "300";
+    font-family: "arial";
+  }
+}/*# sourceMappingURL=main.css.map */

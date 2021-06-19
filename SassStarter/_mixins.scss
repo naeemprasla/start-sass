@@ -1,0 +1,35 @@
+
+@mixin text($color,$size,$align,$lineheight,$tranform,$weight,$fontfamily) {
+    font-size: $size;
+    text-align: $align;
+    line-height: $lineheight;
+    text-transform: $tranform;
+    font-weight: $weight;
+    font-family: $fontfamily;
+}
+
+
+@mixin inner_spaces($top: 0,$left: 0,$bottom: 0,$right: 0) {
+    padding: $top $left $bottom $right;
+}
+
+@mixin outer_spaces($top: 0,$left: 0,$bottom: 0,$right: 0) {
+    margin: $top $left $bottom $right;
+}
+
+
+@mixin transit($element,$speed) {
+    transition: $element $speed ease-in-out;
+    -webkit-transition: $element $speed ease-in-out;
+    -moz-transition: $element $speed ease-in-out;
+    -ms-transition: $element $speed ease-in-out;
+    -o-transition: $element $speed ease-in-out;
+}
+
+@mixin radiusmode($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
