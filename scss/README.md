@@ -14,8 +14,8 @@ How to use?
 
 - Install "vscode-live-sass-compiler" by Glenn Marks in vscode editor.
 - Copy All files in a folder and open with vscode editor.
-- Open main.scss file and click on watch sass button.
-- It will update main.css file on every save,
+- Open style.scss file and click on watch sass button.
+- It will update style.css file on every save,
 
 
 

@@ -1,4 +1,4 @@
-@mixin transit($element,$speed) {
+@mixin transition($element,$speed) {
     transition: $element $speed ease-in-out;
     -webkit-transition: $element $speed ease-in-out;
     -moz-transition: $element $speed ease-in-out;
@@ -6,7 +6,15 @@
     -o-transition: $element $speed ease-in-out;
 }
 
-@mixin radiusmode($value) {
+@mixin translate($value1, $value2) {
+    transform: translate($value1, $value2 );
+    -webkit-transform: translate($value1, $value2 );
+    -moz-transform: translate($value1, $value2 );
+    -ms-transform: translate($value1, $value2 );
+    -o-transform: translate($value1, $value2 );
+}
+
+@mixin radius($value) {
     border-radius: $value;
     -webkit-border-radius: $value;
     -moz-border-radius: $value;

@@ -1,10 +1,11 @@
-/* Theme CSS */
-:root {
-  --ff-arial: "arial";
-  --bg-primary: #fff;
-  --bg-secondary: #000;
+/* _fonts.scss */
+/*Font Family */
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins.otf");
 }
-
+/* _theme.scss */
+/* Theme CSS */
 html,
 body {
   margin: 0;
@@ -43,6 +44,14 @@ p a {
   text-decoration: none;
 }
 
+a {
+  font-size: 18px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -73,9 +82,10 @@ table tbody tr td {
   border: 0;
 }
 
+/* _forms.scss */
 /* Forms CSS*/
 .form-group {
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 .form-group label {
@@ -90,6 +100,11 @@ table tbody tr td {
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
+.form-group .form-control:focus {
+  box-shadow: 0 0 0 transparent;
+  outline: 0;
+  border: 1px solid #ddd;
+}
 .form-group textarea.form-control {
   min-height: 130px;
 }
@@ -101,4 +116,45 @@ table tbody tr td {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
+}
+
+/* _main.scss */
+/* Site Loader CSS */
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: #fff;
+  overflow: hidden;
+}
+.loader .loader-in {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.loader .loader-in .spinner {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-color: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* Site Header CSS*/
+header {
+  position: relative;
+}
+
+/* Site Footer CSS*/
+footer {
+  position: relative;
 }
