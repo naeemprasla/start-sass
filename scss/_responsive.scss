@@ -1,0 +1,47 @@
+@mixin desktopxl {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
+@mixin desktoplg {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+@mixin desktopsm {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+@mixin ipadpro {
+  @media screen and (max-width: 1112px) {
+    @content;
+  }
+}
+@mixin ipadmini {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin mobile-sm {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+@mixin custom_size($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+
+// Responsive Usage
+// .banner{
+//     @include mobile {
+//         font-size: 1.5rem;
+//       }
+// }
